@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
 class Jugador<E extends ItipoPieza> {
-    private ArrayList<E> piezasVivas;
     private NodePieza piezasVivas;
 
     private class NodePieza{
