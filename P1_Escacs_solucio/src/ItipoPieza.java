@@ -6,4 +6,5 @@ public interface ItipoPieza {
     public abstract int getColumna();
     public abstract void setPosicion(int fila, int columna) throws RuntimeException;
     public abstract boolean fiJoc() ;
+
 }

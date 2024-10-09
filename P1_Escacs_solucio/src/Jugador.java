@@ -2,6 +2,16 @@ import java.util.ArrayList;
 
 class Jugador<E extends ItipoPieza> {
     private ArrayList<E> piezasVivas;
+    private NodePieza piezasVivas;
+
+    private class NodePieza{
+        public E pieza;
+        public NodePieza seguent;
+        public NodePieza(E pieza, NodePieza seguent){
+            this.pieza = pieza;
+            this.seguent = seguent;
+        }
+    }
 
     public Jugador(ArrayList<E> piezasVivas) {
         // Guardamos una copia del estado inicial de las piezas vivas
